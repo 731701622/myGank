@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:background="?attr/selectableItemBackground">
+
+    <TextView
+            android:id="@+id/item_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textColor="?android:attr/textColorPrimary"
+            android:textSize="14sp"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="基于QQ、微信和微博原生api文档，整合的第三方分享和登陆框架 (arvinljw)"/>
+
+    <TextView
+            android:id="@+id/item_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/item_desc"
+            tools:text="Android"/>
+
+    <TextView
+            android:id="@+id/item_who"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@id/item_type"
+            app:layout_constraintStart_toEndOf="@id/item_type"
+            app:layout_constraintTop_toTopOf="@id/item_type"
+            tools:text="who"/>
+
+    <TextView
+            android:id="@+id/item_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@id/item_who"
+            app:layout_constraintStart_toEndOf="@id/item_who"
+            app:layout_constraintTop_toTopOf="@id/item_who"
+            tools:text="2018-07-12"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">component_base</string>
+
+    <string name="status_click_me_to_retry">点击我重试</string>
+    <string name="status_error">出了点问题!</string>
+    <string name="status_no_data">没有找到数据</string>
+    <string name="status_timeout">加载超时</string>
+    <string name="status_loading">正在努力加载&#8230;</string>
+
+</resources>
