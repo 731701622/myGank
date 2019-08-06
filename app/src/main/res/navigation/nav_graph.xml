@@ -3,14 +3,41 @@
             xmlns:app="http://schemas.android.com/apk/res-auto"
             xmlns:tools="http://schemas.android.com/tools"
             android:id="@+id/nav_graph"
-            app:startDestination="@id/mainFragment">
+            app:startDestination="@+id/mainFragment">
 
     <fragment
             android:id="@+id/mainFragment"
             android:name="com.wkx.gank.ui.main.MainFragment"
             android:label="最新"
             tools:layout="@layout/fragment_main">
+        <action
+                android:id="@+id/action_mainFragment_to_historyFragment"
+                app:destination="@id/historyFragment"
+                app:enterAnim="@anim/slide_in_right"
+                app:exitAnim="@anim/slide_out_left"
+                app:popEnterAnim="@anim/slide_in_left"
+                app:popExitAnim="@anim/slide_out_right"/>
     </fragment>
+
+    <fragment
+            android:id="@+id/historyFragment"
+            android:name="com.wkx.gank.ui.home.HistoryFragment"
+            android:label="@string/app_name"
+            tools:layout="@layout/layout_refresh_recycler">
+        <action
+                android:id="@+id/action_historyFragment_to_historicalDateFragment"
+                app:destination="@id/historicalDateFragment"
+                app:enterAnim="@anim/slide_in_right"
+                app:exitAnim="@anim/slide_out_left"
+                app:popEnterAnim="@anim/slide_in_left"
+                app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+
+    <fragment
+            android:id="@+id/historicalDateFragment"
+            android:name="com.wkx.gank.ui.home.HistoricalDateFragment"
+            android:label="往期"
+            tools:layout="@layout/layout_refresh_recycler"/>
 
 
 </navigation>

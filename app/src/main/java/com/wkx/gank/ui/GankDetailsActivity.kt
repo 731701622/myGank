@@ -42,6 +42,7 @@ class GankDetailsActivity : AppCompatActivity() {
         initWebSettings()
     }
 
+
     override fun onKeyDown(keyCode: Int, event: KeyEvent): Boolean {
         if (keyCode == KeyEvent.KEYCODE_BACK && web_view.canGoBack()) {
             web_view.goBack()

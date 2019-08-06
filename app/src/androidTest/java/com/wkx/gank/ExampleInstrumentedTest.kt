@@ -19,6 +19,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getTargetContext()
-        assertEquals("com.wazing.gank", appContext.packageName)
+        assertEquals("com.wkx.gank", appContext.packageName)
     }
 }
